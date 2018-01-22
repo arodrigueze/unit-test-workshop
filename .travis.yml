@@ -3,6 +3,8 @@ node_js:
   - "8"
 install:
   - npm i -g npm@5
+  - npm install -g jasmine
+  - npm install -g eslint 
 cache:
   directories:
   - "node_modules"
