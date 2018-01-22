@@ -4,7 +4,8 @@
   "description": "unit test example",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "pretest": "eslint src",
+    "test": "jasmine JASMINE_CONFIG_PATH=test/support/jasmine.json"
   },
   "keywords": [
     "jasmine",
@@ -14,6 +15,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "jasmine": "^2.9.0"
   }
 }
