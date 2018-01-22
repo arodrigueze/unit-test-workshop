@@ -1,4 +1,4 @@
-var isLeap = require('../src/yearLeap');
+const isLeap = require('../src/yearLeap');
 
 describe('Given a year leap function', function (){
     
@@ -6,10 +6,10 @@ describe('Given a year leap function', function (){
         
         it('Then the number 1984 should be leap', function (){
             //Arrange
-            let number = 1984;
+            const number = 1984;
             
             //Act
-            let result = isLeap(number);
+            const result = isLeap(number);
 
             //Assert
             expect(true).toBe(result);
@@ -20,10 +20,10 @@ describe('Given a year leap function', function (){
         
         it('Then the number 1800 should won´t be leap', function (){
             //Arrange
-            let number = 1800;
+            const number = 1800;
             
             //Act
-            let result = isLeap(number);
+            const result = isLeap(number);
 
             //Assert
             expect(false).toBe(result);
